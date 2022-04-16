@@ -8,7 +8,7 @@ The do file for this repository will go a long way to eliminate the fear of choi
 
 # 鸣谢
 感谢 Bilibili 网友 [地表的深层旅途](https://space.bilibili.com/32017974) 提供的通过 ttail 估计 t 值的方法。
-感谢 Bilibili 网友 [ice9fire](https://space.bilibili.com/361814859) 提供的通过 tuples 命令筛选控制变量组真自己的方法。
+感谢 Bilibili 网友 [ice9fire](https://space.bilibili.com/361814859) 提供的通过 tuples 命令筛选控制变量组真子集的方法。
 感谢 `tuples` 命令编写者 Joseph N. Luchman（Fors Marsh Group LLC）、Daniel Klein（Universität Kassel）以及Nicholas J. Cox（Durham University）
 
 
