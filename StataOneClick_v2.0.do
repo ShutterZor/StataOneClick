@@ -33,6 +33,8 @@ forvalues i = 1/`ntuples' {
 }
 
 preserve
+	replace tOfIndX = abs(tOfIndX)
+	replace tValue = abs(tValue)
 	keep if tOfIndX > tValue
 	sort controlVariableNumbers rSq
 	keep if rSq != .
