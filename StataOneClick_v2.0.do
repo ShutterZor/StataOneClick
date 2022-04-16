@@ -34,7 +34,6 @@ forvalues i = 1/`ntuples' {
 
 preserve
 	keep if tOfIndX > tValue
-	gen controlVariableNumbers = wordcount(controlVariableSet) if controlVariableSet != ""
 	sort controlVariableNumbers rSq
 	keep if rSq != .
 	list controlVariableSet tOfIndX tValue rSq
