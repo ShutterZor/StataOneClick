@@ -36,6 +36,7 @@ preserve
 	replace tOfIndX = abs(tOfIndX)
 	replace tValue = abs(tValue)
 	keep if tOfIndX > tValue
+	gen controlVariableNumbers = wordcount(controlVariableSet) if controlVariableSet != ""
 	sort controlVariableNumbers rSq
 	keep if rSq != .
 	list controlVariableSet tOfIndX tValue rSq
