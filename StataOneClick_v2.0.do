@@ -27,7 +27,7 @@ forvalues i = 1/`ntuples' {
 	replace seOfIndX = _se[$independentVariable] in `i'
 	replace tOfIndX = bOfIndX / seOfIndX in `i'
 	replace degreeOfFreedom = e(df_r) in `i'	
-	replace tValue = invttail(degreeOfFreedom, $significance) in `i'
+	replace tValue = invttail(degreeOfFreedom, $significance/2) in `i'
     replace rSq = e(r2) in `i'
 	replace controlVariableSet = "`tuple`i''" in `i'
 }
